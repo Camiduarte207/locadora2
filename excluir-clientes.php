@@ -1,5 +1,5 @@
 <div class="container">
-     <h2>Excluir Cliente</h2>
+     <h2 class="bi bi-trash">Excluir Cliente</h2>
 
 <?php
 $idCliente = $_GET["idCliente"];
@@ -19,9 +19,9 @@ header('Location: index.php?menu=clientes');
             <hr>
             <p>Tem certeza que deseja excluir este registro?</p>
             <div class="d-flex justify-content-center">
-                <a href="index.php?menu=excluir-videos&idFilme=<?= $idFilme ?>&resposta=sim"
+                <a href="index.php?menu=excluir-clientes&idCliente=<?= $idCliente ?>&resposta=sim"
                     class="btn btn-danger m-4">Sim</a>
-                <a href="index.php?menu=excluir-videos&idFilme=<?= $idFilme ?>&resposta=nao"
+                <a href="index.php?menu=excluir-clientes&idCliente=<?= $idCliente?>&resposta=nao"
                     class="btn btn-secondary m-4">Não</a>
 
             </div>
